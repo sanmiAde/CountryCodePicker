@@ -20,24 +20,7 @@
             android:layout_alignBottom="@+id/tvSelectedCountry"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/google_1x">-->
-    <LinearLayout
-        android:id="@+id/flag_holder_lly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_gravity="center_vertical"
-        android:layout_marginEnd="@dimen/google_1x"
-        android:layout_marginRight="@dimen/google_1x"
-        >
 
-      <ImageView
-          android:id="@+id/flag_imv"
-          android:layout_width="wrap_content"
-          android:layout_height="18dp"
-          android:adjustViewBounds="true"
-          android:src="@drawable/flag_indonesia"
-          />
-    </LinearLayout>
 
     <!--</LinearLayout>-->
     <TextView
@@ -66,5 +49,26 @@
         android:src="@drawable/ic_arrow_drop_down_black_24dp"
         android:tint="@android:color/black"
         />
+
+    <LinearLayout
+        android:id="@+id/flag_holder_llyu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/google_1x"
+        android:layout_marginRight="@dimen/google_1x"
+        android:layout_toEndOf="@+id/arrow_imv"
+        android:layout_toRightOf="@+id/arrow_imv"
+        >
+
+      <ImageView
+          android:id="@+id/flag_imvi"
+          android:layout_width="wrap_content"
+          android:layout_height="18dp"
+          android:adjustViewBounds="true"
+          android:src="@drawable/flag_indonesia"
+          />
+    </LinearLayout>
   </RelativeLayout>
 </RelativeLayout>
